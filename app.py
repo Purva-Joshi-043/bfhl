@@ -1,6 +1,10 @@
 from flask import Flask,jsonify, request
 
 app = Flask(__name__)
+@app.route('/bfhl', methods=["GET"])
+def hello():
+    return("hello world")
+
 @app.route('/bfhl', methods=["POST"])
 def bfhl():
         user_id = "purva_joshi_29101999"
